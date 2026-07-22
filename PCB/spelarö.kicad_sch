@@ -2145,7 +2145,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "FCR684205T:OTJ-5"
+		(symbol "OTJ-5_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2204,7 +2204,7 @@
 					)
 				)
 			)
-			(symbol "OTJ-5_0_1"
+			(symbol "OTJ-5_1_0_1"
 				(rectangle
 					(start -5.08 3.81)
 					(end 5.08 -3.81)
@@ -2216,10 +2216,12 @@
 						(type background)
 					)
 				)
-				(pin power_in line
+			)
+			(symbol "OTJ-5_1_1_1"
+				(pin input line
 					(at -7.62 -2.54 0)
 					(length 2.54)
-					(name "GND"
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2237,7 +2239,7 @@
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "Vcc"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2252,10 +2254,10 @@
 						)
 					)
 				)
-				(pin input line
+				(pin power_in line
 					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "Vin"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3320,6 +3322,12 @@
 		(uuid "116948ce-8cb6-46bf-b852-162484db2566")
 	)
 	(junction
+		(at 163.83 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d4404d5-4e28-4bde-afcb-389cb548ef74")
+	)
+	(junction
 		(at 83.82 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3344,10 +3352,10 @@
 		(uuid "91bce840-0103-4a68-a3cb-4adc6c54fd83")
 	)
 	(junction
-		(at 135.89 57.15)
+		(at 156.21 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a8920b6c-c389-4ba4-a7ac-fd816d949168")
+		(uuid "a7599ede-bf77-45ef-ab7a-177340fccee8")
 	)
 	(junction
 		(at 78.74 33.02)
@@ -3360,12 +3368,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2979339-8f73-4807-9b64-4edad6537556")
-	)
-	(junction
-		(at 124.46 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e0c22fc2-abca-4b15-800e-ca38f05698f5")
 	)
 	(no_connect
 		(at 71.12 167.64)
@@ -3411,6 +3413,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 58.42) (xy 163.83 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e5a25a5-548c-45af-820a-d05da532f154")
+	)
+	(wire
+		(pts
 			(xy 81.28 60.96) (xy 77.47 60.96)
 		)
 		(stroke
@@ -3421,6 +3433,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 58.42) (xy 156.21 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a7b63ca-ed17-4a64-9c65-2233c627f623")
+	)
+	(wire
+		(pts
 			(xy 147.32 26.67) (xy 144.78 26.67)
 		)
 		(stroke
@@ -3428,16 +3450,6 @@
 			(type default)
 		)
 		(uuid "34a84953-946e-4f87-a649-0c211123f2b7")
-	)
-	(wire
-		(pts
-			(xy 127 60.96) (xy 127 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39f87d11-2dc6-42d1-8233-579ac99cd58c")
 	)
 	(wire
 		(pts
@@ -3501,26 +3513,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 60.96) (xy 124.46 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e932f66-199a-4b8d-9351-003954b03675")
-	)
-	(wire
-		(pts
-			(xy 132.08 57.15) (xy 135.89 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7058a5e3-3096-4615-85de-52c2aa34bf73")
-	)
-	(wire
-		(pts
 			(xy 53.34 161.29) (xy 53.34 167.64)
 		)
 		(stroke
@@ -3528,16 +3520,6 @@
 			(type default)
 		)
 		(uuid "71944a3c-d6f1-4014-8901-8135a3f1d942")
-	)
-	(wire
-		(pts
-			(xy 124.46 60.96) (xy 127 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75cf41f1-09d6-4121-a423-fbbcb5da7ac2")
 	)
 	(wire
 		(pts
@@ -3571,16 +3553,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 62.23) (xy 133.35 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "875a0dde-4394-463d-8c18-64c1b158b6ae")
-	)
-	(wire
-		(pts
 			(xy 73.66 25.4) (xy 73.66 30.48)
 		)
 		(stroke
@@ -3588,16 +3560,6 @@
 			(type default)
 		)
 		(uuid "8b52c599-84cb-4a4d-8506-161c4478ae50")
-	)
-	(wire
-		(pts
-			(xy 135.89 57.15) (xy 135.89 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dbc9fbb-673b-459b-a3d6-f228d4050096")
 	)
 	(wire
 		(pts
@@ -3621,26 +3583,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 62.23) (xy 138.43 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b33fdbda-ba0b-498a-9a52-dbd06bd7a43c")
-	)
-	(wire
-		(pts
-			(xy 135.89 55.88) (xy 135.89 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5010fe1-cb48-40e9-acab-4ea9cad5841b")
-	)
-	(wire
-		(pts
 			(xy 77.47 60.96) (xy 73.66 60.96)
 		)
 		(stroke
@@ -3658,6 +3600,16 @@
 			(type default)
 		)
 		(uuid "bac356d6-57e1-4797-b927-ad4bc402dd48")
+	)
+	(wire
+		(pts
+			(xy 156.21 57.15) (xy 156.21 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bea09f95-c7c7-4b49-abbc-32f94d5ca758")
 	)
 	(wire
 		(pts
@@ -3691,6 +3643,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 62.23) (xy 158.75 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf49caf1-9878-495e-a38f-508e449c93e7")
+	)
+	(wire
+		(pts
 			(xy 83.82 105.41) (xy 83.82 113.03)
 		)
 		(stroke
@@ -3698,16 +3660,6 @@
 			(type default)
 		)
 		(uuid "cfa0f654-b353-4c9e-97e1-2f5bab5ad971")
-	)
-	(wire
-		(pts
-			(xy 124.46 57.15) (xy 124.46 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d01f23d4-5226-48c4-a5e3-e9ca04128e68")
 	)
 	(wire
 		(pts
@@ -3828,16 +3780,6 @@
 			(justify left bottom)
 		)
 		(uuid "0b6e0837-505c-433e-b7b9-6af18b2b0dd1")
-	)
-	(label "toslink"
-		(at 139.7 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0be9e5da-6454-420f-bb6e-2239af454cd4")
 	)
 	(label "5"
 		(at 38.1 40.64 180)
@@ -4089,6 +4031,16 @@
 		)
 		(uuid "eb0ad638-ce2c-4b48-b17f-ea4fe28fe4a0")
 	)
+	(label "toslink"
+		(at 153.67 62.23 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ecccb1fd-fad6-4efa-ac2c-fab1ce83b001")
+	)
 	(label "tft_dc"
 		(at 38.1 50.8 180)
 		(effects
@@ -4305,7 +4257,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 128.27 57.15 90)
+		(at 160.02 58.42 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4316,7 +4268,7 @@
 		(fields_autoplaced yes)
 		(uuid "23f54c24-6cdd-468a-a5f2-08fc342265c5")
 		(property "Reference" "C1"
-			(at 128.27 49.53 90)
+			(at 160.02 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4326,7 +4278,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 128.27 52.07 90)
+			(at 160.02 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4336,7 +4288,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 132.08 56.1848 0)
+			(at 163.83 57.4548 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4347,7 +4299,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 57.15 0)
+			(at 160.02 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4358,7 +4310,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 128.27 57.15 0)
+			(at 160.02 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4384,8 +4336,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 135.89 55.88 0)
+		(lib_name "OTJ-5_1")
+		(lib_id "FCR684205T:OTJ-5")
+		(at 156.21 69.85 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4394,30 +4347,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2ba2ee6f-0e13-415a-a02d-c5111af4bcb2")
-		(property "Reference" "#PWR011"
-			(at 135.89 59.69 0)
-			(hide yes)
+		(uuid "267e9730-591d-436c-8a06-6a07f880812d")
+		(property "Reference" "U3"
+			(at 161.29 68.5799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 135.89 50.8 0)
+		(property "Value" "OTJ-5"
+			(at 161.29 71.1199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 135.89 55.88 0)
+		(property "Footprint" "footprints:toslink"
+			(at 156.21 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4428,7 +4382,91 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 55.88 0)
+			(at 156.21 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 156.21 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ef9a2181-601b-452a-ad07-6f9fdf549c76")
+		)
+		(pin "3"
+			(uuid "e05c1993-c20b-4bd9-a5fb-332e7eaa2e46")
+		)
+		(pin "1"
+			(uuid "aab98062-0400-40b3-8662-c4493b6a29f8")
+		)
+		(instances
+			(project "spelarö"
+				(path "/1c8cd1b3-26b7-4bfe-bcb6-e2ca378b1bff"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 156.21 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ba2ee6f-0e13-415a-a02d-c5111af4bcb2")
+		(property "Reference" "#PWR011"
+			(at 156.21 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 156.21 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4439,7 +4477,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 135.89 55.88 0)
+			(at 156.21 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4541,7 +4579,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 60.96 270)
+		(at 163.83 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4549,10 +4587,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3b8867f2-5dab-47fe-86b0-c1131d3fd70b")
 		(property "Reference" "#PWR010"
-			(at 116.84 60.96 0)
+			(at 163.83 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4563,18 +4600,18 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 60.9599 90)
+			(at 161.798 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 60.96 0)
+			(at 163.83 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4585,7 +4622,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 60.96 0)
+			(at 163.83 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4596,7 +4633,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 60.96 0)
+			(at 163.83 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5715,91 +5752,6 @@
 			(project "spelarö"
 				(path "/1c8cd1b3-26b7-4bfe-bcb6-e2ca378b1bff"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FCR684205T:OTJ-5")
-		(at 135.89 69.85 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a1bda48b-470c-4e83-8e15-ca3340121e26")
-		(property "Reference" "U2"
-			(at 140.97 68.5799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "OTJ-5"
-			(at 140.97 71.1199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "footprints:toslink"
-			(at 135.89 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "174a6923-26d4-4bfe-b9b5-afa323f81e32")
-		)
-		(pin "3"
-			(uuid "943507a2-85ca-435e-9a3b-abff225b5449")
-		)
-		(pin "2"
-			(uuid "479d3402-383f-4370-a396-a695bade12a8")
-		)
-		(instances
-			(project "spelarö"
-				(path "/1c8cd1b3-26b7-4bfe-bcb6-e2ca378b1bff"
-					(reference "U2")
 					(unit 1)
 				)
 			)

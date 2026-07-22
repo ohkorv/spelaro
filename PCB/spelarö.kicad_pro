@@ -538,7 +538,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/Users/korven/Documents/spelarö/PCB/production/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -662,7 +662,7 @@
         "uuid": "1c8cd1b3-26b7-4bfe-bcb6-e2ca378b1bff"
       }
     ],
-    "used_designators": "LED1-2,#PWR12-14",
+    "used_designators": "U3",
     "variants": []
   },
   "sheets": [
